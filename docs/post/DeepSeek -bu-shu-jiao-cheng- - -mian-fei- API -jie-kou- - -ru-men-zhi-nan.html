@@ -10,9 +10,9 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="昨天给大家分享了：🔗[鸿蒙 NEXT x86 虚拟机版本，可安装 HAP 应用](https://xiaoyi.vc/next-x86-hap.html)，其实就是 HarmonyOS Next 模拟器，为开发者提供的测试环境工具，它允许开发者在没有实体设备的情况下，模拟真实设备的环境，进行应用的调试和性能测试。">
+<meta name="description" content="[DeepSeek 专题](https://xiaoyi.vc/deepseek)提供 DeepSeek 部署教程，包括 PC 电脑端本地部署最新 DeepSeek-R1 模型，手机端通过 Termux 快速部署 DeepSeek-R1 模型。">
 <meta property="og:title" content="DeepSeek 部署教程 / 免费 API 接口 / 入门指南">
-<meta property="og:description" content="昨天给大家分享了：🔗[鸿蒙 NEXT x86 虚拟机版本，可安装 HAP 应用](https://xiaoyi.vc/next-x86-hap.html)，其实就是 HarmonyOS Next 模拟器，为开发者提供的测试环境工具，它允许开发者在没有实体设备的情况下，模拟真实设备的环境，进行应用的调试和性能测试。">
+<meta property="og:description" content="[DeepSeek 专题](https://xiaoyi.vc/deepseek)提供 DeepSeek 部署教程，包括 PC 电脑端本地部署最新 DeepSeek-R1 模型，手机端通过 Termux 快速部署 DeepSeek-R1 模型。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://xia1ge.github.io/deepseek/post/DeepSeek%20-bu-shu-jiao-cheng-%20-%20-mian-fei-%20API%20-jie-kou-%20-%20-ru-men-zhi-nan.html">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
@@ -73,8 +73,137 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>昨天给大家分享了：🔗<a href="https://xiaoyi.vc/next-x86-hap.html" rel="nofollow">鸿蒙 NEXT x86 虚拟机版本，可安装 HAP 应用</a>，其实就是 HarmonyOS Next 模拟器，为开发者提供的测试环境工具，它允许开发者在没有实体设备的情况下，模拟真实设备的环境，进行应用的调试和性能测试。</p>
-<p>不过这个 HarmonyOS Next 模拟器没有提供应用商店，如果你想体验鸿蒙应用的话，给大家找来了几个鸿蒙 Next 系统 HAP 应用安装包，只要把这个 HAP 包拖放到文件管理器里面就会自动安装了。</p></div>
+<div class="markdown-body" id="postBody"><p><a href="https://xiaoyi.vc/deepseek" rel="nofollow">DeepSeek 专题</a>提供 DeepSeek 部署教程，包括 PC 电脑端本地部署最新 DeepSeek-R1 模型，手机端通过 Termux 快速部署 DeepSeek-R1 模型。收录各大云平台服务（英伟达、微软、亚马逊AWS、阿里云、腾讯云、硅基流动 x 华为云）提供的（免费） API  接口服务，以及收录支持 DeepSeek  API 应用等等。</p>
+<p><strong>关于 DeepSeek</strong> </p>
+<p><a href="https://xiaoyi.vc/deepseek" rel="nofollow">DeepSeek</a> 是由深度求索自主研发的高性能大语言模型，以其开源、轻量化和强大的多场景适应能力受到广泛关注。其最新发布的 R1 大模型不仅在性能上比肩甚至超越了 OpenAI 的 o1，且以对手 3% 的超低成本实现了这一突破。</p>
+<p><a href="https://xiaoyi.vc/deepseek-app-store.html" rel="nofollow">突然火爆全网！开源 AI 模型「DeepSeek」登顶苹果 App Store 免费应用榜</a><br>
+<a href="https://xiaoyi.vc/deepseek.html" rel="nofollow">真香！如果你还在纠结用哪个 AI 模型，强烈建议你试试 DeepSeek</a></p>
+<p><strong>DeepSeek 官方</strong></p>
+<ul>
+<li>DeepSeek 网页版：<a href="https://www.deepseek.com/" rel="nofollow">访问</a></li>
+<li>DeepSeek 手机端：<a href="https://download.deepseek.com/app/" rel="nofollow">访问</a> | <a href="https://pan.quark.cn/s/c36aea2435d1" rel="nofollow">网盘下载</a></li>
+<li>DeepSeek API：<a href="https://platform.deepseek.com/" rel="nofollow">访问</a></li>
+<li>服务器繁忙？查看状态：<a href="https://status.deepseek.com/" rel="nofollow">访问</a></li>
+</ul>
+<p><strong>DeepSeek 入门指南</strong></p>
+<p>🗂️ 提示词</p>
+<ul>
+<li>DeepSeek 提示库：<a href="https://api-docs.deepseek.com/zh-cn/prompt-library/" rel="nofollow">访问</a></li>
+<li>1000 个 DeepSeek 神级提示词：<a href="https://pan.quark.cn/s/054b8e9fcf1f" rel="nofollow">网盘下载</a></li>
+</ul>
+<p>🗂️ 使用指南</p>
+<ul>
+<li>🔥清华大学 DeepSeek 从入门到精通：<a href="https://pan.quark.cn/s/aa6bf9d26fa9" rel="nofollow">网盘下载</a> | <a href="https://www.bilibili.com/video/BV1cRN4eSEoy/" rel="nofollow">视频</a></li>
+<li>🔥清华大学 DeepSeek赋能职场：<a href="https://pan.quark.cn/s/6693581031e9" rel="nofollow">网盘下载</a></li>
+<li>🔥清华大学普通人如何抓住 DeepSeek 红利：<a href="https://pan.quark.cn/s/ea2dc607ed23" rel="nofollow">网盘下载</a></li>
+<li>🔥清华大学 DeepSeek + DeepResearch 让科研像聊天一样简单：<a href="https://pan.quark.cn/s/6d3279d33a51" rel="nofollow">网盘下载</a></li>
+<li>🔥清华大学 DeepSeek 与 AI 幻觉：<a href="https://pan.quark.cn/s/8aa12bdd8efb" rel="nofollow">网盘下载</a></li>
+<li>北京大学 DeepSeek 与  AIGC 应用：<a href="https://pan.quark.cn/s/eb42235d25f6" rel="nofollow">网盘下载</a></li>
+<li>北京大学 DeepSeek 提示词工程和落地场景：<a href="https://pan.quark.cn/s/1559e86e0071" rel="nofollow">网盘下载</a></li>
+<li>DeepSeek  7 大热点 + 全套提示词零基础入门：<a href="https://pan.quark.cn/s/f14693215c56" rel="nofollow">网盘下载</a></li>
+<li>DeepSeek 应该怎样提问：<a href="https://pan.quark.cn/s/8ebc8ddc167a" rel="nofollow">网盘下载</a></li>
+<li>DeepSeek 不好用，是你真的不会用啊！：<a href="https://pan.quark.cn/s/461ecbbb4395" rel="nofollow">网盘下载</a></li>
+<li>DeepSeek 高效使用指南：<a href="https://pan.quark.cn/s/50d872d4d33e" rel="nofollow">网盘下载</a></li>
+<li>3个 DeepSeek 隐藏玩法：<a href="https://pan.quark.cn/s/1289751a7c37" rel="nofollow">网盘下载</a></li>
+<li>DeepSeek 15 天指导手册：<a href="https://pan.quark.cn/s/799d9f9c2129" rel="nofollow">网盘下载</a></li>
+<li>DeepSeek 小白使用指南，99% 的人都不知道的使用技巧：<a href="https://pan.quark.cn/s/d8a47509ccf7" rel="nofollow">网盘下载</a></li>
+<li>零基础使用 DeepSeek 高效提问技巧：<a href="https://pan.quark.cn/s/6d6914d53022" rel="nofollow">网盘下载</a></li>
+<li>让你的 DeepSeek 能力翻倍的使用指南：<a href="https://pan.quark.cn/s/85fe8c5d72cd" rel="nofollow">网盘下载</a></li>
+<li>如何正确使用 DeepSeek？99%的人都错了：<a href="https://pan.quark.cn/s/71a2035075b1" rel="nofollow">网盘下载</a></li>
+<li>当我用 DeepSeek 学习、工作、使用实例和心得：<a href="https://pan.quark.cn/s/655136c0d6f9" rel="nofollow">网盘下载</a></li>
+<li>DeepSeek 放弃复杂提示词，直接提问效果反而更好？：<a href="https://pan.quark.cn/s/b672a9ad883b" rel="nofollow">网盘下载</a></li>
+</ul>
+<p>🗂️ 券商报告</p>
+<ul>
+<li>DeepSeek 券商报告合集：<a href="https://pan.quark.cn/s/a68366019fa9" rel="nofollow">网盘下载</a></li>
+</ul>
+<p><strong>已接入 DeepSeek R1（官方平替）</strong></p>
+<p>🗂️ 在线使用</p>
+<ul>
+<li>🔥华为小艺助手：<a href="https://xiaoyi.huawei.com/chat" rel="nofollow">访问</a></li>
+<li>腾讯元宝：<a href="https://yuanbao.tencent.com/chat/" rel="nofollow">访问</a> | <a href="https://xiaoyi.vc/yuanbao-tencent.html" rel="nofollow">介绍</a></li>
+<li>WPS 灵犀：<a href="https://lingxi.wps.cn/" rel="nofollow">访问</a></li>
+<li>问小白：<a href="https://www.wenxiaobai.com/?forceLogin=true&amp;source=xiaoyi&amp;ad_source=xiaoyi" rel="nofollow">访问</a> | <a href="https://xiaoyi.vc/wenxiaobai.html" rel="nofollow">介绍</a></li>
+<li>跃问：<a href="https://yuewen.cn/chats/new" rel="nofollow">访问</a></li>
+<li>秘塔 AI：<a href="https://metaso.cn/" rel="nofollow">访问</a></li>
+<li>纳米 AI：<a href="https://www.n.cn/" rel="nofollow">访问</a></li>
+<li>天工 AI：<a href="https://www.tiangong.cn/" rel="nofollow">访问</a></li>
+<li>国家超算互联网：<a href="https://chat.scnet.cn/" rel="nofollow">访问</a> | <a href="https://xiaoyi.vc/chat-scnet-cn.html" rel="nofollow">介绍</a></li>
+<li>浙大：<a href="https://chat.zju.edu.cn/" rel="nofollow">访问</a> | <a href="https://xiaoyi.vc/chat-zju-edu-cn.html" rel="nofollow">介绍</a></li>
+<li>支付宝百宝箱：<a href="https://tbox.alipay.com/about" rel="nofollow">访问</a></li>
+<li>当贝 AI：<a href="https://ai.dangbei.com/chat" rel="nofollow">访问</a></li>
+<li>百度：<a href="https://chat.baidu.com/" rel="nofollow">访问</a></li>
+</ul>
+<p>🗂️ 客户端接入</p>
+<ul>
+<li>微信：<a href="https://xiaoyi.vc/wechat-deepseek.html" rel="nofollow">介绍</a></li>
+<li>腾讯 ima：<a href="https://xiaoyi.vc/ima-deepseek-r1.html" rel="nofollow">介绍</a></li>
+<li>QQ浏览器：<a href="https://browser.qq.com/" rel="nofollow">访问</a></li>
+<li>腾讯文档：<a href="https://docs.qq.com/" rel="nofollow">访问</a></li>
+<li>钉钉 AI 助理：<a href="https://page.dingtalk.com/wow/dingtalk/default/dingtalk/AIzhuli" rel="nofollow">访问</a></li>
+<li>Cursor：<a href="https://www.cursor.com/" rel="nofollow">访问</a> | <a href="https://xiaoyi.vc/cursor-deepseek-r1.html" rel="nofollow">介绍</a></li>
+<li>百度APP：<a href="https://mo.baidu.com/mo/home" rel="nofollow">访问</a></li>
+<li>联通云盘：<a href="https://pan.wo.cn/" rel="nofollow">访问</a></li>
+</ul>
+<p>🗂️ 手机接入</p>
+<p>华为、荣耀、OPPO、vivo、中兴、努比亚、红魔、魅族、小米</p>
+<p>[title]本地部署 DeepSeek 教程 [/title]</p>
+<p>🗂️ 硬件要求</p>
+<ul>
+<li><a href="https://xiaoyi.vc/deepseek-specs.html" rel="nofollow">本地部署「DeepSeek」模型硬件配置要求</a></li>
+<li><a href="https://xiaoyi.vc/deepseek-thinkinai.html" rel="nofollow">在线检测你的设备能否运行 DeepSeek</a></li>
+<li><a href="https://xiaoyi.vc/deepseek-qwen-llama.html" rel="nofollow">DeepSeek 开源模型 Qwen 与 Llama 区别，以及量化介绍</a></li>
+</ul>
+<p>🗂️ 电脑端</p>
+<ul>
+<li>🔥<a href="https://xiaoyi.vc/deepseek-lm-studio.html" rel="nofollow">免部署即用 DeepSeek 全量本地模型库 + LM Studio</a></li>
+<li><a href="https://xiaoyi.vc/deepseek-gui.html" rel="nofollow">DeepSeek 本地大模型整合包下载！开箱即用，无需部署</a></li>
+<li><a href="https://xiaoyi.vc/ollama-deepseek.html" rel="nofollow">超简单！3 步部署国产 AI 神器 DeepSeek 到你的电脑</a></li>
+<li><a href="https://www.flowyaipc.com/" rel="nofollow">英特尔酷睿 Ultra 本地运行 DeepSeek：Flowy AI PC</a></li>
+</ul>
+<p>🗂️ 手机端</p>
+<ul>
+<li><a href="https://xiaoyi.vc/deepseek-pocketpal-ai.html" rel="nofollow">手机（安卓 / iOS）轻松离线布署 DeepSeek：PocketPal AI</a></li>
+<li><a href="https://xiaoyi.vc/termux-deepseek.html" rel="nofollow">一行代码！手机秒变 AI 神器：DeepSeek 离线部署指南</a></li>
+</ul>
+<p><strong>DeepSeek 免费 API 汇总</strong></p>
+<ul>
+<li>🔥<a href="https://xiaoyi.vc/deepseek-free-api.html" rel="nofollow">满血版 DeepSeek 免费 / 限免 API 汇总！持续更新</a></li>
+<li><a href="https://xiaoyi.vc/deepseek-api-free.html" rel="nofollow">免费白嫖 Deepseek API 接口的方法！</a></li>
+</ul>
+<p><strong>DeepSeek 模型云部署</strong></p>
+<ul>
+<li>🔥硅基流动 x 华为云：<a href="https://cloud.siliconflow.cn/i/ObQ4tEwW" rel="nofollow">注册</a> | <a href="https://xiaoyi.vc/siliconcloud-deepseek.html" rel="nofollow">教程</a></li>
+<li>微软 Azure：<a href="https://ai.azure.com/" rel="nofollow">注册</a></li>
+<li>英伟达 ：<a href="https://build.nvidia.com/deepseek-ai/deepseek-r1" rel="nofollow">注册</a></li>
+<li>Cloudflare：<a href="https://developers.cloudflare.com/workers-ai/models/" rel="nofollow">注册</a></li>
+<li>Gitee AI：<a href="https://ai.gitee.com/serverless-api" rel="nofollow">注册</a></li>
+<li>亚马逊 AWS：<a href="https://aws.amazon.com/cn/blogs/aws/deepseek-r1-models-now-available-on-aws" rel="nofollow">注册</a></li>
+<li>阿里云：<a href="https://pai.console.aliyun.com/#/quick-start/" rel="nofollow">注册</a> | <a href="https://help.aliyun.com/zh/pai/user-guide/one-click-deployment-deepseek-v3-model" rel="nofollow">教程</a></li>
+<li>腾讯云：<a href="https://cloud.tencent.com/product/hai" rel="nofollow">注册</a> | <a href="https://cloud.tencent.com/developer/article/2492543" rel="nofollow">教程</a></li>
+<li>百度智能云：<a href="https://cloud.baidu.com/" rel="nofollow">注册</a></li>
+<li>火山引擎：<a href="https://www.volcengine.com/" rel="nofollow">注册</a></li>
+<li>京东云：<a href="https://www.jdcloud.com/" rel="nofollow">注册</a> | <a href="https://docs.jdcloud.com/cn/yanxi-cap/practice-DeepSeek" rel="nofollow">教程</a></li>
+<li>华为昇腾社区：<a href="https://www.hiascend.com/software/modelzoo/models" rel="nofollow">注册</a> | <a href="https://www.hiascend.com/software/modelzoo/models/detail/68457b8a51324310aad9a0f55c3e56e3" rel="nofollow">教程</a></li>
+<li>联通云电脑：<a href="https://www.cucloud.cn/product/cuc.html" rel="nofollow">注册</a></li>
+<li>电信天翼云电脑：<a href="https://www.ctyun.cn/products/tyydn" rel="nofollow">注册</a></li>
+<li>移动云：<a href="https://ecloud.10086.cn/portal" rel="nofollow">注册</a></li>
+<li>讯飞：<a href="https://www.xfyun.cn/" rel="nofollow">注册</a> | <a href="https://xiaoyi.vc/xfyun-deepseek.html" rel="nofollow">教程</a></li>
+</ul>
+<p><strong>支持</strong> DeepSeek  API 对话客户端</p>
+<ul>
+<li>Cherry Studio：<a href="https://pan.quark.cn/s/03309e9f960e" rel="nofollow">网盘下载</a> | <a href="https://cherry-ai.com/" rel="nofollow">官方</a> | <a href="https://xiaoyi.vc/cherry-studio.html" rel="nofollow">介绍</a></li>
+<li>Chatbox：<a href="https://pan.quark.cn/s/ad7a15e691a0" rel="nofollow">网盘下载</a> | <a href="https://github.com/Bin-Huang/chatbox">官方</a></li>
+</ul>
+<p><strong>集成 DeepSeek  API 应用</strong></p>
+<p>🔥<a href="https://xiaoyi.vc/officeai-deepseek.html" rel="nofollow">解锁 Office / WPS 的 DeepSeek 功能：OfficeAI助手</a><br>
+<a href="https://xiaoyi.vc/deepseek-api-app.html" rel="nofollow">一些集成 DeepSeek 的免费开源工具，解锁 AI 生产力新姿势！</a><br>
+<a href="https://xiaoyi.vc/imtip-deepseek.html" rel="nofollow">把 DeepSeek 变成你的 AI 桌面助手，实现微信自动回复消息：ImTip</a></p>
+<p><strong>DeepSeek 接入第三方教程</strong></p>
+<ul>
+<li><a href="https://xiaoyi.vc/deepseek-wechat.html" rel="nofollow">DeepSeek 接入微信，小白有手就会，保姆级教程！</a></li>
+<li><a href="https://xiaoyi.vc/iphone-siri-deepseek.html" rel="nofollow">超简单！苹果 iPhone 的 Siri 接入满血 DeepSeek</a></li>
+</ul></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
