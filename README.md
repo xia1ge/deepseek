@@ -1,4 +1,4 @@
-# Blog Title :link: https://xia1ge.github.io/xiaoyi 
+# Blog Title :link: https://xia1ge.github.io/deepseek/
 ### :page_facing_up: [1](https://xia1ge.github.io/xiaoyi/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 266 
